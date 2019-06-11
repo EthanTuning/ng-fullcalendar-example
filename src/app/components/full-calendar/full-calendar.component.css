@@ -6,3 +6,31 @@
     border-radius: 2%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
+/* Full Calendar Style Overrides */
+
+:host ::ng-deep .fc-toolbar h2 {
+    color: #588069;
+}
+
+:host ::ng-deep .fc-toolbar button {
+    color: #ffffff;
+    background: #588069;
+    border: none;
+}
+
+:host ::ng-deep .fc-head .fc-day-header {
+    color: #588069;
+}
+
+:host ::ng-deep .fc-body .fc-day-number {
+    color: #588069;
+}
+
+:host ::ng-deep .fc-body .fc-today {
+    background: rgba(176, 255, 210, .3);
+}
+
+:host ::ng-deep .fc-unthemed td {
+    border-color: rgba(87, 127, 104, 0.35);
+}
