@@ -9,14 +9,14 @@ import * as apiConfig from './service-config.json';
 
 export class EventsService {
 
-  apiKeyString: any =  '?api_key=' + apiConfig[0];
-  holidaysUrl = 'https://calendarific.com/api/v2';
+  apiKeyString: any = apiConfig[0];
+  holidaysUrl = 'https://calendarific.com/api/v2/holidays';
 
   constructor(private http: HttpClient) { }
 
   getHolidays(): Observable<any> {
 
-    return this.http.get<any>(`${ this.holidaysUrl }`);
+    return this.http.get<any>(this.holidaysUrl);
 
   }
 
