@@ -32,5 +32,13 @@
 }
 
 :host ::ng-deep .fc-unthemed td {
-    border-color: rgba(87, 127, 104, 0.35);
+    border-color: rgba(87, 127, 104, 0.25);
+}
+
+:host ::ng-deep .fc-day-grid-event {
+    background: #588069;
+    border-color: #588069;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
 }
