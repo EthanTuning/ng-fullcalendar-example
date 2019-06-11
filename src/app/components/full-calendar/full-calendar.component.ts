@@ -14,7 +14,6 @@ export class FullCalendarComponent implements OnInit {
 
   holidayEvents = [];
   calendarPlugins = [dayGridPlugin];
-  calendarEvents = [];
 
   constructor(private eventsSerivce: EventsService) { }
 

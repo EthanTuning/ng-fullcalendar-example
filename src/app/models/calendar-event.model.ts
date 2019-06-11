@@ -3,7 +3,7 @@ import { Adapter } from './adapter';
 
 export class CalendarEvent {
 
-    constructor(public name: string, public date: any[]) { }
+    constructor(public title: string, public date: any[]) { }
 
 }
 
@@ -15,7 +15,7 @@ export class CalendarEventAdapter implements Adapter<CalendarEvent> {
 
     adapt(item: any): CalendarEvent {
 
-        return new CalendarEvent (item.name, item.date);
+        return new CalendarEvent (item.name, item.date['iso']);
 
     }
 
